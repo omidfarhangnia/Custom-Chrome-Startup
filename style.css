@@ -17,6 +17,7 @@ a{
     background: rgb(4, 4, 4);
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
 .iconContainer{
@@ -124,13 +125,27 @@ a{
     cursor: pointer;
 }
 
-/*
-          <a href="dsdd" target="_blank">
+/* colorfull ways */
+.colorfulWays{
+    width: 15vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+}
 
-          </a>
-          <a href="https://threejs.org/" target="_blank">
+.rightWay{
+    right: 0;
+}
 
-          </a>
-                       width="60px"
-              heigth="60px"
-*/
+.leftWay{
+    left: 0;
+}
+
+.colorWaves{
+    width: 10%;
+    height: 40vh;
+    border-radius: 20px;
+    position: absolute;
+    top: 100%;
+}
