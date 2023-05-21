@@ -20,6 +20,13 @@ a{
     overflow: hidden;
 }
 
+.handBgImage{
+    background-image: url("images/hand_bg_image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+}
+
 .iconContainer{
     width: 90vh;
     height: 90vh;
@@ -104,17 +111,6 @@ a{
     color: #ffffff;
     letter-spacing: -3px;
     padding-bottom: 10px;
-}
-
-.handBgImage{
-    width: 90%;
-    height: 90%;
-    background-image: url("images/hand_bg_image.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 10%;
-    left: 5%;
 }
 
 .searchIcon{

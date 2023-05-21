@@ -22,7 +22,7 @@ function wavesAnimeRight(className, delayValue) {
       top: "-50%",
       duration: 0.55,
       delay: delayValue,
-      opacity: .7,
+      opacity: 0.7,
       onComplete: () => {
         wavesAnimeRight(className, 0);
       },
@@ -62,8 +62,32 @@ wavesAnimeLeft(".leftColorWaves2", 0.15);
 wavesAnimeLeft(".leftColorWaves3", 0.3);
 
 // search icon animation
-const searchIcon = document.querySelector('.searchIcon');
+const searchIcon = document.querySelector(".searchIcon");
 searchIcon.addEventListener("click", () => {
   const searchAnime = gsap.timeline();
-  
+  searchAnime
+    .to(".icons", {
+      scale: .6,
+      opacity: 0,
+      stagger: .05,
+      duration: .1,
+    })
+    .set(".handBgImage", {
+      delay: .2,
+      backgroundSize: "0% 0%",
+    })
 });
+
+gsap.to(".iconContainer", {
+  rotate: 360,
+  repeat: -1,
+  duration: 250,
+  ease: "linear"
+})
+
+gsap.to(".icons, .searchIcon", {
+  rotate: -360,
+  repeat: -1,
+  duration: 250,
+  ease: "linear"
+})
