@@ -1,0 +1,120 @@
+/* reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* style page */
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: rgb(4, 4, 4);
+    display: grid;
+    place-items: center;
+}
+
+.iconContainer{
+    width: 90vh;
+    height: 90vh;
+    position: relative;
+}
+
+.icons{
+    width: 9%;
+    height: 9%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+.icon_num_1 {
+    top: 0;
+    left: calc(50% - 4.5%);
+}
+
+.icon_num_3 {
+    top: 24%;
+    right: 8%;
+    font-size: 45px;
+}
+
+.icon_num_2 {
+    top: 8%;
+    right: 24%;
+}
+
+.icon_num_4 {
+    top: calc(50% - 4.5%);
+    right: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing: -3px;
+    padding-bottom: 10px;
+}
+
+.icon_num_5 {
+    bottom: 24%;
+    right: 8%;
+}
+
+.icon_num_6 {
+    bottom: 8%;
+    right: 24%;
+    font-size: 45px;
+}
+
+.icon_num_7 {
+    bottom: 0;
+    left: calc(50% - 4.5%);
+    font-size: 45px;
+}
+
+.icon_num_8 {
+    bottom: 8%;
+    left: 24%;
+    font-size: 45px;
+}
+
+.icon_num_9 {
+    left: 8%;
+    bottom: 24%;
+    padding-top: 5px;
+}
+
+.icon_num_10 {
+    top: calc(50% - 4.5%);
+    left: 0;
+}
+
+.icon_num_11 {
+    left: 8%;
+    top: 24%;
+}
+
+.icon_num_12 {
+    top: 8%;
+    left: 24%;
+}
+
+.handBgImage{
+    width: 90%;
+    height: 90%;
+    background-image: url("../chromeLobby/images/hand_bg_image.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.searchIcon{
+    position: absolute;
+    top: 44%;
+    left: 42%;
+    font-size: 60px;
+    cursor: pointer;
+}
