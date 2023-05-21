@@ -31,6 +31,11 @@ a{
     width: 90vh;
     height: 90vh;
     position: relative;
+    display: flex;
+    gap: 50px;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .icons{
@@ -115,10 +120,14 @@ a{
 
 .searchIcon{
     position: absolute;
-    top: 44%;
-    left: 42%;
     font-size: 60px;
     cursor: pointer;
+}
+
+.exitIcon{
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
 }
 
 /* colorfull ways */
@@ -144,4 +153,24 @@ a{
     border-radius: 20px;
     position: absolute;
     top: 100%;
+}
+
+/* search bar */
+.searchInput{
+    position: absolute;
+    width: 450px;
+    font-size: 25px;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50px;
+    /* background: linear-gradient(to right, #718c7c, #8f7948, #8a4245); */
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchInput:focus{
+    outline: 0;
 }
